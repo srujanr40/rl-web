@@ -2,22 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Reinforcement Learning Projects</title>
-    <link>http://localhost:1313/</link>
+    <link>http://localhost:1313/posts/</link>
     <description>Recent content on Reinforcement Learning Projects</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 2024 Srujan Rao</copyright>
-    <lastBuildDate>Fri, 21 Jun 2024 16:01:00 -0700</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>About</title>
-      <link>http://localhost:1313/about/</link>
-      <pubDate>Fri, 21 Jun 2024 16:01:00 -0700</pubDate>
-      
-      <guid>http://localhost:1313/about/</guid>
-      <description>Here is some content.</description>
-      
-    </item>
-    
+    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
       <link>http://localhost:1313/posts/first-post/</link>
