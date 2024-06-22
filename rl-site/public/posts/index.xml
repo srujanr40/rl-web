@@ -9,12 +9,12 @@
     <copyright>© 2024 Srujan Rao</copyright>
     <lastBuildDate>Fri, 21 Jun 2024 16:01:00 -0700</lastBuildDate><atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>RL Cart</title>
-      <link>http://localhost:1313/posts/first-post/</link>
+      <title>Cartpole Problem</title>
+      <link>http://localhost:1313/posts/rl-cartpole/</link>
       <pubDate>Fri, 21 Jun 2024 16:01:00 -0700</pubDate>
       
-      <guid>http://localhost:1313/posts/first-post/</guid>
-      <description></description>
+      <guid>http://localhost:1313/posts/rl-cartpole/</guid>
+      <description>Here is something about the cartpole problem</description>
       
     </item>
     
