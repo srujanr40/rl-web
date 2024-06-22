@@ -7,11 +7,11 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 2024 Srujan Rao</copyright>
-    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 21 Jun 2024 16:01:00 -0700</lastBuildDate><atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title></title>
+      <title>RL Cart</title>
       <link>http://localhost:1313/posts/first-post/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 21 Jun 2024 16:01:00 -0700</pubDate>
       
       <guid>http://localhost:1313/posts/first-post/</guid>
       <description></description>

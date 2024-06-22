@@ -18,5 +18,15 @@
       
     </item>
     
+    <item>
+      <title>RL Cart</title>
+      <link>http://localhost:1313/posts/first-post/</link>
+      <pubDate>Fri, 21 Jun 2024 16:01:00 -0700</pubDate>
+      
+      <guid>http://localhost:1313/posts/first-post/</guid>
+      <description></description>
+      
+    </item>
+    
   </channel>
 </rss>
