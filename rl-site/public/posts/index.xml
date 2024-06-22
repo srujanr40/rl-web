@@ -10,12 +10,22 @@
     <lastBuildDate>Fri, 21 Jun 2024 16:01:00 -0700</lastBuildDate><atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Cartpole Problem</title>
-      <link>http://localhost:1313/posts/rl-cartpole/</link>
+      <link>http://localhost:1313/posts/cart-pole/</link>
       <pubDate>Fri, 21 Jun 2024 16:01:00 -0700</pubDate>
       
-      <guid>http://localhost:1313/posts/rl-cartpole/</guid>
+      <guid>http://localhost:1313/posts/cart-pole/</guid>
       <description>Here is something about the cartpole problem</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/cart-pole/featured.png" />
+    </item>
+    
+    <item>
+      <title>Mountain Car Problem</title>
+      <link>http://localhost:1313/posts/mountain-car/</link>
+      <pubDate>Fri, 21 Jun 2024 16:01:00 -0700</pubDate>
       
+      <guid>http://localhost:1313/posts/mountain-car/</guid>
+      <description>Here is something about the mountain car problem</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/mountain-car/featured.png" />
     </item>
     
   </channel>

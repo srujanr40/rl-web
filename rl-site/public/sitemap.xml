@@ -15,7 +15,13 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:1313/posts/rl-cartpole/</loc>
+    <loc>http://localhost:1313/posts/cart-pole/</loc>
+    <lastmod>2024-06-21T16:01:00-07:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/posts/mountain-car/</loc>
     <lastmod>2024-06-21T16:01:00-07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
