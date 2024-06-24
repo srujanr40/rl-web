@@ -9,6 +9,16 @@
     <copyright>© 2024 Srujan Rao</copyright>
     <lastBuildDate>Fri, 21 Jun 2024 16:01:00 -0700</lastBuildDate><atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>About</title>
+      <link>http://localhost:1313/tags/about/</link>
+      <pubDate>Fri, 21 Jun 2024 16:01:00 -0700</pubDate>
+      
+      <guid>http://localhost:1313/tags/about/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
       <title>Article</title>
       <link>http://localhost:1313/tags/article/</link>
       <pubDate>Fri, 21 Jun 2024 16:01:00 -0700</pubDate>
