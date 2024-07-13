@@ -27,13 +27,13 @@
 [[main]]
   name = "Cartpole"
   parent = "Projects"
-  pageRef = "posts"
+  pageRef = "posts/cart-pole"
   weight = 20
 
 [[main]]
   name = "Mountain Car"
   parent = "Projects"
-  pageRef = "posts"
+  pageRef = "posts/mountain-car"
   weight = 20
 
 #[[subnavigation]]
