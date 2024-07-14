@@ -103,7 +103,7 @@
     "keywords": ["article"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "152"
+    "wordCount": "254"
   }]
   </script>
 
@@ -570,7 +570,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2024-06-21 16:01:00 -0700 -0700">21 June 2024</time><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">1 min</span>
+  <time datetime="2024-06-21 16:01:00 -0700 -0700">21 June 2024</time><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">2 mins</span>
   
 
   
@@ -623,7 +623,7 @@
   <ul>
     <li><a href="#introduction-to-the-problem">Introduction to the problem</a></li>
     <li><a href="#the-goal">The Goal</a></li>
-    <li><a href="#heading-2">heading 2</a></li>
+    <li><a href="#approach">Approach</a></li>
     <li><a href="#heading-3">heading 3</a></li>
   </ul>
 </nav>
@@ -640,7 +640,7 @@
   <ul>
     <li><a href="#introduction-to-the-problem">Introduction to the problem</a></li>
     <li><a href="#the-goal">The Goal</a></li>
-    <li><a href="#heading-2">heading 2</a></li>
+    <li><a href="#approach">Approach</a></li>
     <li><a href="#heading-3">heading 3</a></li>
   </ul>
 </nav>
@@ -698,6 +698,7 @@
     
 </h2>
 <p>The cartpole problem involves a movable cart on a track with a pole attached to its center. The only actions the agent can perform are to move the cart a step to the left, or a step to the right. The agent can fully observe the state of the environment at any given time step. The pole on the cart can rotate freely and is weighed down by gravity.</p>
+<p>An environment for this problem is generously available in the OpenAI Gym library through the CartPole-v1 environment. This library provides all the necessary tools to set up the problem and interact with the environment, allowing us to focus on a solution of the problem instead of the details of the environment. It also allows us to visualize the cartpole, and easily observe how the actions of the agent affect the positions of the cart and pole.</p>
 <p><em>Demo of the problem with the agent taking random actions</em></p>
 <p>{{include image here}}</p>
 
@@ -715,16 +716,17 @@
 <p>The goal of the problem is to get the agent to keep the pole on the cart upright. To do so, the agent needs to move the cart to the left or right just the right amount at each time step such that the movement of the cart balances the movement of the pole against gravity.</p>
 
 
-<h2 class="relative group">heading 2 
-    <div id="heading-2" class="anchor"></div>
+<h2 class="relative group">Approach 
+    <div id="approach" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#heading-2" aria-label="Anchor">#</a>
+            style="text-decoration-line: none !important;" href="#approach" aria-label="Anchor">#</a>
     </span>        
     
 </h2>
+<p>To approach this problem, we will use the OpenAI Gym library to create an environment for the problem. We will use the CartPole-v1 environment. This provides a</p>
 
 
 <h2 class="relative group">heading 3 
