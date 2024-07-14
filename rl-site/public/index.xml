@@ -24,7 +24,7 @@
       <pubDate>Fri, 21 Jun 2024 16:01:00 -0700</pubDate>
       
       <guid>http://localhost:1313/posts/cart-pole/</guid>
-      <description>Here is something about the cartpole problem</description>
+      <description>Introduction to the problem # The cartpole problem involves a movable cart on a track with a pole attached to its center.</description>
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/cart-pole/featured.png" />
     </item>
     

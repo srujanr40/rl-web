@@ -15,9 +15,9 @@ title = "Reinforcement Learning Projects"
 
  [author]
    name = "Srujan Rao"
-   image = "img/blowfish_logo.png"
-   headline = "I'm only human"
-   bio = "A little bit about you"
+   image = "img/profile.jpg"
+   headline = "I try"
+   bio = "Hey! I'm a recent graduate with a Bachelors in Science, majoring in Computer Science from the University of British Columbia, Vancouver. I'm compiling some of my reinforcement learning projects here."
    links = [
      { email = "mailto:hello@your_domain.com" },
      { link = "https://link-to-some-website.com/" },

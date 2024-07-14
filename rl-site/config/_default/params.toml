@@ -26,7 +26,7 @@ defaultBackgroundImage = "background.svg" # used as default for background image
 # smartTOCHideUnfocusedChildren = true
 
 [header]
-  layout = "basic" # valid options: basic, fixed, fixed-fill, fixed-gradient, fixed-fill-blur
+  layout = "fixed" # valid options: basic, fixed, fixed-fill, fixed-gradient, fixed-fill-blur
 
 [footer]
   showMenu = true
@@ -55,17 +55,17 @@ defaultBackgroundImage = "background.svg" # used as default for background image
   showAuthor = false
   # showAuthorBottom = false
   showHero = true
-  heroStyle = "big" # valid options: basic, big, background, thumbAndBackground
+  heroStyle = "thumbAndBackground" # valid options: basic, big, background, thumbAndBackground
   layoutBackgroundBlur = true # only used when heroStyle equals background or thumbAndBackground
   layoutBackgroundHeaderSpace = true # only used when heroStyle equals background
   showBreadcrumbs = false
-  showDraftLabel = true
+  showDraftLabel = false
   showEdit = false
   # editURL = "https://github.com/username/repo/"
   editAppendPath = true
   seriesOpened = false
   showHeadingAnchors = true
-  showPagination = true
+  showPagination = false
   invertPagination = false
   showReadingTime = true
   showTableOfContents = true
@@ -73,7 +73,7 @@ defaultBackgroundImage = "background.svg" # used as default for background image
   # relatedContentLimit = 3
   showTaxonomies = false
   showAuthorsBadges = false
-  showWordCount = true
+  showWordCount = false
   # sharingLinks = [ "linkedin", "twitter", "reddit", "pinterest", "facebook", "email", "whatsapp", "telegram"]
   showZenMode = false
 
