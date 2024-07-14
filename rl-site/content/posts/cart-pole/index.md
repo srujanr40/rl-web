@@ -19,8 +19,29 @@ An environment for this problem is generously available in the OpenAI Gym librar
 
 The goal of the problem is to get the agent to keep the pole on the cart upright. To do so, the agent needs to move the cart to the left or right just the right amount at each time step such that the movement of the cart balances the movement of the pole against gravity.
 
+## What can the agent observe?
+
+The agent can observe the **cart position** on the x-axis, the **cart velocity**, the **pole angle** in radians, and the **pole angular velocity**.
+
 ## Approach
 
-To approach this problem, we will use the OpenAI Gym library to create an environment for the problem. We will use the CartPole-v1 environment. This provides a 
+### Q-Learning
+
+For the agent to know what upright is, it must be given rewards for achieving the required state and be penalized for not achieving the required state. In the cartpole environment, the agent gains a +1 reward for every step it take where the pole is maintained upright, and no reward if the pole fails to be upright. By encouraging the agent to take actions that maximize rewards, we can encourage actions that keep the pole upright.
+
+To teach the agent to keep the pole upright, we can use Q-Learning utilizing Bellmans' equations. Q-Learning is an algorithm that learns from the environment by updating the Q-Values of the state-action pairs. By repeatedly training the agent on the same environment, the agent can take actions and then observe the outcome of the action and the reward it obtains from said action. We can use this to build a state-action pair table with values that correspond to the probability of maximizing rewards based on the action taken.
+
+*Q-Learning Algorithm*
+
+### Epsilon Greedy Policy
+
+Q-learning can create a state-action pair table, but does not tell the agent what action to take at what state. 
+
+To be able to exploit this data, we can use an epsilon-greedy policy. We want the agent to take more random steps at the beginning of training as it encourages exploration, allowing the agent to explore all possible actions and paths that may lead to the highest overall rewards rather than pigeonholing it into one series of actions. However, with enough iterations and enough exploration, we would like the agent to get greedier and take more action where the Q-value is higher so it gets better at refining the optimal series of actions for maximum rewards. 
+
+With the epsilon-greedy policy, the agent has a chance of taking a random action and a chance of taking the greedy action. The greedy action is the action that maximizes the Q-value. We can start with a low epislon value to encourage the agent to explore. By increasing the value of epsilon over time, we can get the agent to exploit instead of explore.
+
+*Epsilon-Greedy Policy*
+
 
 ## heading 3
