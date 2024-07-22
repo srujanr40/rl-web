@@ -5,6 +5,8 @@ draft = false
 tags = ['article']
 +++
 
+{{< katex >}}
+
 ## Introduction to the problem
 
 The cartpole problem involves a movable cart on a track with a pole attached to its center. The only actions the agent can perform are to move the cart a step to the left, or a step to the right. The agent can fully observe the state of the environment at any given time step. The pole on the cart can rotate freely and is weighed down by gravity.
@@ -13,11 +15,11 @@ An environment for this problem is generously available in the OpenAI Gym librar
 
 *Demo of the problem with the agent taking random actions*
 
-{{include image here}}
+![image gif of cartpole with the agent taking random actions, the cartpole is not upright](./images/cartpole-random.gif)
 
 ## The Goal
 
-The goal of the problem is to get the agent to keep the pole on the cart upright. To do so, the agent needs to move the cart to the left or right just the right amount at each time step such that the movement of the cart balances the movement of the pole against gravity.
+**The goal of the problem is to get the agent to keep the pole on the cart upright**. To do so, the agent needs to move the cart to the left or right just the right amount at each time step such that the movement of the cart balances the movement of the pole against gravity.
 
 ## What can the agent observe?
 
@@ -31,17 +33,45 @@ For the agent to know what upright is, it must be given rewards for achieving th
 
 To teach the agent to keep the pole upright, we can use Q-Learning utilizing Bellmans' equations. Q-Learning is an algorithm that learns from the environment by updating the Q-Values of the state-action pairs. By repeatedly training the agent on the same environment, the agent can take actions and then observe the outcome of the action and the reward it obtains from said action. We can use this to build a state-action pair table with values that correspond to the probability of maximizing rewards based on the action taken.
 
-*Q-Learning Algorithm*
+> **Bellman's Optimality Equation for Q-values**
+$$
+ Q[s_t, a_t] = r[s_t, a_t] + \gamma \max_a Q[s_{t+1}, a]
+$$
+
+> **Q-Learning Algorithm to update Q-values for state-action pairs**
+$$
+ Q[s, a] \leftarrow Q[s,a] + \alpha((r + \gamma \max_{a'}Q[s',a']) - Q[s,a])
+$$
+
+#### Gamma
+- Gamma (\\(\gamma\\)) is the *discount factor*, and it influences how future rewards are valued immediate to current rewards. It is bounded between 0 and 1.
+  - A value of 0 represents valuing only immediate rewards with no concern for future rewards.
+  - A value of 1 represents valuing future rewards equally as much as immediate rewards.
+
+#### Alpha
+- Alpha (\\(\alpha\\)) is the *learning rate*, and it influences the extent to which the new information overrides the information learned in earlier iterations. It is bounded between 0 and 1.
+  - With an (\\(\alpha\\)) closer to 1, the agent learns quicker because it heavily weighs new information. However, it can lead to instability as the agent may overly adjust to recent experiences.
+  - With an (\\(\alpha\\)) closer to 0, the agent learns slowly as it relies more on the existing Q-values. This can lead to more stable learning but may also cause the agent to take a long time to adapt to changes in the environment.
+  - For this problem we will run 2 versions of Q-learning: one with alpha set to a constant 0.1, and another with a decaying alpha where alpha is set to 1/k where k is the number of times an (s, a) pair has been seen.
+
 
 ### Epsilon Greedy Policy
 
-Q-learning can create a state-action pair table, but does not tell the agent what action to take at what state. 
+Q-learning can create a state-action pair table, but does not tell the agent what action to take at what state.
 
-To be able to exploit this data, we can use an epsilon-greedy policy. We want the agent to take more random steps at the beginning of training as it encourages exploration, allowing the agent to explore all possible actions and paths that may lead to the highest overall rewards rather than pigeonholing it into one series of actions. However, with enough iterations and enough exploration, we would like the agent to get greedier and take more action where the Q-value is higher so it gets better at refining the optimal series of actions for maximum rewards. 
+To be able to exploit this data, we can use an epsilon-greedy policy. We want the agent to take more random steps at the beginning of training as it encourages exploration, allowing the agent to explore all possible actions and paths that may lead to the highest overall rewards rather than pigeonholing it into one series of actions. However, with enough iterations and enough exploration, we would like the agent to get greedier and take more action where the Q-value is higher so it gets better at refining the optimal series of actions for maximum rewards.
 
-With the epsilon-greedy policy, the agent has a chance of taking a random action and a chance of taking the greedy action. The greedy action is the action that maximizes the Q-value. We can start with a low epislon value to encourage the agent to explore. By increasing the value of epsilon over time, we can get the agent to exploit instead of explore.
+With the epsilon-greedy policy, we define a parameter (\\(\epsilon\\)) that determines the chance of taking a random action. The agent selects the greedy action with probability 1 - (\\(\epsilon\\)), and selects a random action otherwise. The greedy action is the action that maximizes the Q-value. We can start with a high epislon value to encourage the agent to explore. By decreasing the value of epsilon over time, we can get the agent to exploit instead of explore.
 
-*Epsilon-Greedy Policy*
+> **Epsilon-Greedy Policy**
+> ``` python3
+> x = random(0, 1)
+> 
+> if x < epsilon:
+>     do random action
+> else:
+>     do greedy action [argmax(Q(s,a) for the given state)]
+> ```
 
 
 ## heading 3
