@@ -6,4 +6,4 @@ A website that explains my approach and solution to some problems that I solved 
 
 After cloning the repository, run `hugo server` or `hugo serve` to start the site locally.
 
-Built with [Hugo](https://gohugo.io/) and the [[Blowfish theme]](https://themes.gohugo.io/themes/blowfish/)
+Built with [Hugo](https://gohugo.io/) and the [Blowfish theme](https://themes.gohugo.io/themes/blowfish/)
