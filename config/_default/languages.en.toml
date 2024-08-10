@@ -10,7 +10,7 @@ title = "Reinforcement Learning Projects"
   dateFormat = "2 January 2006"
   # logo = "img/logo.png"
   # secondaryLogo = "img/secondary-logo.png"
-  # description = "My awesome website"
+  description = "Srujan's website for Reinforcement Learning Projects"
   # copyright = "Copy, _right?_ :thinking_face:"
 
  [author]
@@ -19,8 +19,8 @@ title = "Reinforcement Learning Projects"
    headline = "I try"
    bio = "Hey! I'm a recent graduate with a Bachelors in Science, majoring in Computer Science from the University of British Columbia, Vancouver. I'm compiling some of my reinforcement learning projects here."
    links = [
-     { email = "mailto:hello@your_domain.com" },
-     { link = "https://link-to-some-website.com/" },
-     { github = "https://github.com/username" },
-     { linkedin = "https://linkedin.com/in/username" },
+     { email = "mailto:srujanr40@gmail.com" },
+     { link = "https://srujanr40.github.io/personal_website/" },
+     { github = "https://github.com/srujanr40" },
+     { linkedin = "https://linkedin.com/in/rao-srujan/" },
   ]
