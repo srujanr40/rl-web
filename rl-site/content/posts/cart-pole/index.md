@@ -11,7 +11,7 @@ tags = ['article']
 
 The cartpole problem involves a movable cart on a track with a pole attached to its center. The only actions the agent can perform are to move the cart a step to the left, or a step to the right. The agent can fully observe the state of the environment at any given time step. The pole on the cart can rotate freely and is weighed down by gravity.
 
-An environment for this problem is generously available in the OpenAI Gym library through the CartPole-v1 environment. This library provides all the necessary tools to set up the problem and interact with the environment, allowing us to focus on a solution of the problem instead of the details of the environment. It also allows us to visualize the cartpole, and easily observe how the actions of the agent affect the positions of the cart and pole.
+>An environment for this problem is generously available in the OpenAI Gym library through the CartPole-v1 environment. This library provides all the necessary tools to set up the problem and interact with the environment, allowing us to focus on a solution of the problem instead of the details of the environment. It also allows us to visualize the cartpole, and easily observe how the actions of the agent affect the positions of the cart and pole.
 
 *Demo of the problem with the agent taking random actions*
 
@@ -74,4 +74,8 @@ With the epsilon-greedy policy, we define a parameter (\\(\epsilon\\)) that dete
 > ```
 
 
-## heading 3
+## Results
+
+With both an alpha value of 0.1 and a decaying alpha, the Q-learning algorithm was run for 20000 episodes with 5000 steps per episode. With both versions of the Q-learning algorithm, the agent was able to learn the optimal policy for the cartpole problem. A demo of the agent taking the optimal actions is shown below.
+
+![image gif of cartpole with the agent taking the optimal actions, the cartpole is upright](./images/cartpole-post.gif)
