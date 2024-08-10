@@ -15,21 +15,26 @@
 #  pageRef = "posts"
 #  weight = 10
 
-#[[main]]
-#  name = "Parent"
-#  weight = 20
+[[main]]
+  name = "About"
+  pageRef = "about"
+  weight = 20
 
-#[[main]]
-#  name = "example sub-menu 1"
-#  parent = "Parent"
-#  pageRef = "posts"
-#  weight = 20
+[[main]]
+  name = "Projects"
+  weight = 20
 
-#[[main]]
-#  name = "example sub-menu 2"
-#  parent = "Parent"
-#  pageRef = "posts"
-#  weight = 20
+[[main]]
+  name = "Cartpole"
+  parent = "Projects"
+  pageRef = "posts/cart-pole"
+  weight = 20
+
+[[main]]
+  name = "Mountain Car"
+  parent = "Projects"
+  pageRef = "posts/mountain-car"
+  weight = 20
 
 #[[subnavigation]]
 #  name = "An interesting topic"
@@ -45,7 +50,7 @@
 #[[main]]
 #  name = "Categories"
 #  pageRef = "categories"
-#  weight = 20
+# weight = 20
 
 #[[main]]
 #  name = "Tags"
