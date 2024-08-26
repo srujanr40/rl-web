@@ -36,10 +36,10 @@ defaultBackgroundImage = "background.svg" # used as default for background image
   showScrollToTop = true
 
 [homepage]
-  layout = "hero" # valid options: page, profile, hero, card, background, custom
-  #homepageImage = "IMAGE.jpg" # used in: hero, and card
+  layout = "background" # valid options: page, profile, hero, card, background, custom
+  # homepageImage = "unsplash.jpg" # used in: hero, and card
   showRecent = true
-  showRecentItems = 5
+  showRecentItems = 200
   # showMoreLink = true
   # showMoreLinkDest = "/posts"
   cardView = true
